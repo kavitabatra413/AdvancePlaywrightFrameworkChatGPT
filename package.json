@@ -1,0 +1,28 @@
+{
+  "name": "advance-playwright-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright TypeScript POM framework for OrangeHRM demo",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.6.5",
+    "@types/winston": "^2.4.4",
+    "allure-playwright": "^3.14.0",
+    "dotenv": "^17.2.0",
+    "exceljs": "^4.4.0",
+    "mysql2": "^3.24.6",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
+  }
+}

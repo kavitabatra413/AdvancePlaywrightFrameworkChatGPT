@@ -1,0 +1,76 @@
+Playwright Test Automation Framework Overview
+
+This project is a Playwright-based test automation framework built for web application testing, especially for OrangeHRM. It follows the Page Object Model (POM) design pattern to keep tests readable, maintainable, and reusable.
+
+Framework Purpose
+- Automate user flows in web applications
+- Separate test logic from page-specific selectors and actions
+- Reuse common functionality across multiple tests
+- Improve maintainability for large test suites
+
+Main Components
+
+1. Test Files
+   - Located in src/tests/
+   - These contain the actual business scenarios to be tested.
+   - Example: addEmployee.spec.ts
+
+2. Page Objects
+   - Located in src/pages/
+   - Each page/class represents a UI page like LoginPage, DashboardPage, and ViewEmployeeListPage.
+   - These classes hold locators and methods such as login(), openPIM(), addEmployee(), etc.
+
+3. Fixtures
+   - Located in src/fixtures/
+   - Test fixtures provide shared objects like page, loginPage, dashboardPage, and employeePage to tests.
+   - This reduces duplication and keeps tests cleaner.
+
+4. Test Data
+   - Located in src/testdata/
+   - Stores input values used in tests, such as employee names and other reusable data.
+
+5. Configuration
+   - Playwright configuration is defined in playwright.config.ts
+   - Environment values are stored in src/config/env.ts
+
+6. Utilities
+   - Located in src/utils/
+   - Includes logger setup, custom reporting, and helper utilities for test execution.
+
+7. Logs
+   - logs/combined.log stores runtime logs for debugging and reporting.
+
+Framework Flow
+
+1. Test starts from a spec file such as addEmployee.spec.ts.
+2. The test imports reusable fixtures from src/fixtures/testFixtures.ts.
+3. Fixtures create page objects and pass them into the test.
+4. The test calls methods from page objects like:
+   - loginPage.open()
+   - loginPage.login()
+   - dashboardPage.openPIM()
+   - employeePage.openAddEmployee()
+   - employeePage.addEmployee()
+5. Each page object handles UI actions and validations.
+6. Assertions are performed using Playwright's expect API.
+7. Results are reported and logs are generated.
+
+Example Flow for Employee Creation
+- Open login page
+- Enter username and password
+- Click Login
+- Open the PIM menu
+- Navigate to Add Employee
+- Fill employee details
+- Click Save
+- Verify the employee details page is displayed
+
+Why This Framework is Good
+- Easy to scale
+- Page-specific logic is isolated
+- Better code reuse
+- Cleaner and more readable test cases
+- Supports automation best practices
+
+Summary
+A Playwright framework with POM organizes automation into reusable page objects and test scenarios. This structure makes the tests easier to maintain, faster to extend, and more stable for long-term automation.

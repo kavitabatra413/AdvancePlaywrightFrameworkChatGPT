@@ -1,0 +1,6 @@
+{
+  "runId": "20261113_115043",
+  "tests": {
+    "chromium › addEmployee.spec.ts › Admin can add an employee from PIM with image": "timedOut"
+  }
+}
