@@ -1,8 +1,8 @@
 const runId = Date.now().toString().slice(-6);
 
 export const employeeData = {
-  firstName: 'Test',
-  middleName: 'Playwright',
+  firstName: 'Test1',
+  middleName: 'Playwright1',
   lastName: `Employee${runId}`
 };
 

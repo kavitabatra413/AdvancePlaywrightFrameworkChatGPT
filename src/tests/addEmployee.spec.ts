@@ -46,6 +46,7 @@ logger.info('========== TEST COMPLETED ==========');
 });
 
 /*
+base url is https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 npx playwright test addEmployee.spec.ts --headed
 View the reports
 Reports:

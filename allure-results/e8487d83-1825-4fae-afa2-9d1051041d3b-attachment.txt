@@ -1,0 +1,11 @@
+2026-11-20 13:27:49 [info] [AddEmployeeTest] ========== TEST STARTED ==========
+2026-11-20 13:27:49 [info] [LoginPage] Opening OrangeHRM login page
+2026-11-20 13:27:52 [info] [LoginPage] Entering login credentials
+2026-11-20 13:27:52 [info] [LoginPage] Clicking Login button
+2026-11-20 13:27:54 [info] [LoginPage] Login successful
+2026-11-20 13:27:54 [info] [DashboardPage] Clicking PIM menu
+2026-11-20 13:27:55 [info] [DashboardPage] PIM page opened successfully
+2026-11-20 13:27:55 [info] [ViewEmployeeListPage] Clicking Add Employee tab
+2026-11-20 13:27:56 [info] [ViewEmployeeListPage] Add Employee page opened
+2026-11-20 13:27:56 [info] [ViewEmployeeListPage] Adding employee: Test1 Employee469478
+2026-11-20 13:27:57 [info] [ViewEmployeeListPage] Clicking Save button
